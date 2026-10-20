@@ -1,0 +1,58 @@
+logLevel: info
+rtspAddress: :8554
+
+webrtc: yes
+webrtcAddress: :8889
+webrtcLocalUDPAddress: :8189
+# 改成运行 MediaMTX 的机器在局域网中的 IP
+webrtcAdditionalHosts: [192.168.1.50]
+
+paths:
+  # 2×2 使用前 4 路；3×3 再补 cam05…cam09。
+  # WHEP 地址对应为 https://<gateway>:8889/cam01/whep
+  # 建议使用子码流 102（704x576）或 103（1280x720），降低浏览器重编码压力。
+  # viewer:CHANGE_ME 换成相机的只读账号，不要把 admin 密码写进前端。
+  cam01:
+    source: rtsp://viewer:CHANGE_ME@192.168.1.101:554/Streaming/Channels/102
+    rtspTransport: tcp
+    sourceOnDemand: yes
+
+  cam02:
+    source: rtsp://viewer:CHANGE_ME@192.168.1.102:554/Streaming/Channels/102
+    rtspTransport: tcp
+    sourceOnDemand: yes
+
+  cam03:
+    source: rtsp://viewer:CHANGE_ME@192.168.1.103:554/Streaming/Channels/102
+    rtspTransport: tcp
+    sourceOnDemand: yes
+
+  cam04:
+    source: rtsp://viewer:CHANGE_ME@192.168.1.104:554/Streaming/Channels/102
+    rtspTransport: tcp
+    sourceOnDemand: yes
+
+  # cam05:
+  #   source: rtsp://viewer:CHANGE_ME@192.168.1.105:554/Streaming/Channels/102
+  #   rtspTransport: tcp
+  #   sourceOnDemand: yes
+  #
+  # cam06:
+  #   source: rtsp://viewer:CHANGE_ME@192.168.1.106:554/Streaming/Channels/102
+  #   rtspTransport: tcp
+  #   sourceOnDemand: yes
+  #
+  # cam07:
+  #   source: rtsp://viewer:CHANGE_ME@192.168.1.107:554/Streaming/Channels/102
+  #   rtspTransport: tcp
+  #   sourceOnDemand: yes
+  #
+  # cam08:
+  #   source: rtsp://viewer:CHANGE_ME@192.168.1.108:554/Streaming/Channels/102
+  #   rtspTransport: tcp
+  #   sourceOnDemand: yes
+  #
+  # cam09:
+  #   source: rtsp://viewer:CHANGE_ME@192.168.1.109:554/Streaming/Channels/102
+  #   rtspTransport: tcp
+  #   sourceOnDemand: yes
