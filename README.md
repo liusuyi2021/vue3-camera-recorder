@@ -7,6 +7,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+**仓库地址：** <https://github.com/liusuyi2021/vue3-camera-recorder>
+
 ## 界面预览
 
 | 2×2 宫格 | 3×3 宫格 |
@@ -83,7 +85,7 @@ flowchart LR
 ## 快速开始
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_NAME/vue3-camera-recorder.git
+git clone https://github.com/liusuyi2021/vue3-camera-recorder.git
 cd vue3-camera-recorder
 npm install
 npm run dev:https

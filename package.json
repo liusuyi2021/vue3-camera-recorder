@@ -14,6 +14,14 @@
     "mediarecorder",
     "hikvision"
   ],
+  "homepage": "https://github.com/liusuyi2021/vue3-camera-recorder#readme",
+  "bugs": {
+    "url": "https://github.com/liusuyi2021/vue3-camera-recorder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liusuyi2021/vue3-camera-recorder.git"
+  },
   "license": "MIT",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
